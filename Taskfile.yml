@@ -1,0 +1,46 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
+
+  # ===> Docker <===
+  start:
+    desc: start only the frontend
+    cmds:
+      - docker compose run --rm web
+
+  build:
+    desc: build only the frontend
+    cmds:
+      - docker compose build web {{.CLI_ARGS}}
+
+  cli:
+    desc: launch container cmd line
+    cmds:
+      - docker compose run -it --rm web sh
+
+  # ===> Setup <===
+  venv:
+    desc: create a new environment (.venv) if not exits, otherwise update it
+    cmds:
+      - |
+        if [ -d  $DIR_ENV ]; then
+          echo "$DIR_ENV is already present"
+        else
+          python3 -m venv $DIR_ENV
+        fi
+        $DIR_ENV/bin/pip install --upgrade pip black mypy pre-commit
+      - task: git:hooks
+
+  git:hooks:
+    desc: "install pre-commit"
+    cmds:
+      - $DIR_ENV/bin/pre-commit install --hook-type pre-commit --hook-type pre-merge-commit --hook-type post-merge

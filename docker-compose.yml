@@ -1,0 +1,37 @@
+name: "miniwedding"
+
+services:
+  web:
+    image: web/development
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: dev
+    command: bun run dev
+    ports:
+      - 5173:5173
+    volumes:
+      - ./web:/app
+      - /app/node_modules # exclude the directory
+    network_mode: "host"
+
+# services:
+#   web:
+#     image: wewed/development
+#     build:
+#       context: ./wewed
+#       dockerfile: Dockerfile
+#     command: sh -c "ng serve --host 0.0.0.0" 
+#     ports:
+#       - 4200:4200
+#     volumes:
+#       - ./wewed/src:/app/src 
+#       - ./wewed/www:/app/www
+#       - ./wewed/package.json:/app/package.json
+#       - ./wewed/package-lock.json:/app/package-lock.json
+
+#   wewed-init:
+#     image: wewed/development
+#     build:
+#       context: ./wewed
+#       dockerfile: Dockerfile
