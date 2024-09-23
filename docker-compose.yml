@@ -10,6 +10,7 @@ services:
     command: bun run dev
     ports:
       - 5173:5173
+      - 4200:4200
     volumes:
       - ./web:/app
       - /app/node_modules # exclude the directory
