@@ -9,9 +9,15 @@ tasks:
   default:
     cmds:
       - echo "{{.GREETING}}"
+      - go-task --list
     silent: true
 
   # ===> Docker <===
+  start:
+    desc: start only the frontend
+    cmds:
+      - docker compose run --rm web
+
   start:
     desc: start only the frontend
     cmds:
