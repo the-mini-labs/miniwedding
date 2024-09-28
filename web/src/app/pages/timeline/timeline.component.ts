@@ -5,12 +5,12 @@ import { ConfirmComponent } from '../../components/confirm/confirm.component';
 import { SeparatorComponent } from '../../components/separator/separator.component';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-timeline',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, ConfirmComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  imports: [HeaderComponent, FooterComponent, ConfirmComponent, SeparatorComponent],
+  templateUrl: './timeline.component.html',
+  styleUrl: './timeline.component.css'
 })
-export class HomeComponent {
+export class TimelineComponent {
 
 }

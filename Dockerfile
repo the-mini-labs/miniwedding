@@ -1,7 +1,7 @@
 ARG NODE_VERSION=21
 
 # first stage
-FROM node:${NODE_VERSION}-slim as bun
+FROM node:${NODE_VERSION}-slim AS bun
 
 ARG BUN_VERSION=1.0.36
 
@@ -14,7 +14,7 @@ RUN apt update && apt install -y bash curl unzip && \
 ENV PATH="${PATH}:/root/.bun/bin"
 
 # second stage
-FROM bun as dev
+FROM bun AS dev
 
 # copy file only if they exits
 COPY ./web/package.json* ./

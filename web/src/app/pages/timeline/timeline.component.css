@@ -1,0 +1,31 @@
+.wedding-schedule {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.schedule-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.schedule-item:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+.schedule-item:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+.schedule-item h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.schedule-item p {
+  margin: 5px 0;
+  color: #666;
+}
