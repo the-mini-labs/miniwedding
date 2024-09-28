@@ -2,7 +2,7 @@
   .navbar {
     background-color: white;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
-    padding: 1rem 0;
+    padding: 0.3rem 0;
   }
 
   .container {
@@ -19,7 +19,8 @@
   }
 
   .logo img {
-    height: 40px;
+    height: 60px;
+    width: 60px;
   }
 
   .nav-links {
@@ -66,7 +67,7 @@
     transition: all 0.3s;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 620px) {
     .container {
       flex-wrap: wrap;
     }
