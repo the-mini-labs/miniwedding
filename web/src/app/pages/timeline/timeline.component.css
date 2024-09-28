@@ -1,31 +1,47 @@
 .wedding-schedule {
   max-width: 600px;
   margin: 0 auto;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .schedule-item {
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
 }
 
 .schedule-item:nth-child(odd) {
-  background-color: #f0f0f0;
+  background-color: #f8f8f8;
 }
 
 .schedule-item:nth-child(even) {
-  background-color: #e0e0e0;
+  background-color: #ececec;
 }
 
 .schedule-item h3 {
-  margin-top: 0;
+  margin-top: 8px 0;
   color: #333;
+  font-size: 1.6em;
+  text-transform: uppercase;
 }
 
 .schedule-item p {
-  margin: 5px 0;
-  color: #666;
+  margin: 5px 50px;
+  color: #7c7c7c;
+}
+
+.schedule-item p:first-of-type {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.schedule-item p:last-of-type {
+  font-size: 1.2em;
+}
+
+.schedule-item i {
+  color: #000000; /* Darker color for italic text */
+  font-weight: 500; /* Slightly bolder */
 }
