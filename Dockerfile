@@ -21,6 +21,6 @@ COPY ./web/package.json* ./
 COPY ./web/bun.lockb* ./
 
 RUN bun install -g @angular/cli
-RUN bun install --frozen-lockfile
+RUN bun install
 
 EXPOSE 5173

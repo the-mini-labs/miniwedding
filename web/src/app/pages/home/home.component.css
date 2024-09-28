@@ -1,0 +1,26 @@
+.elegant-separator {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: lightgray;
+  }
+  
+  .ornament {
+    width: 10px;
+    height: 10px;
+    background-color: lightgrey;
+    transform: rotate(45deg);
+    margin: 0 15px;
+  }

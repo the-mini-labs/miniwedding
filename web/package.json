@@ -21,6 +21,8 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "@fortawesome/angular-fontawesome": "^0.15.0",
+    "@fortawesome/fontawesome-free": "^6.6.0",
     "autoprefixer": "^10.4.19",
     "keen-slider": "^6.8.6",
     "postcss": "^8.4.38",
