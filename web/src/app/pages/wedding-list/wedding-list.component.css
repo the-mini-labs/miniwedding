@@ -1,0 +1,30 @@
+.central-container {
+    display: flex-col;
+    text-align: center; /* Center the text */
+    margin: 4%; /* Add some margin */
+    padding: 20px; /* Add padding for better spacing */
+    max-width: 600px; /* Set a maximum width for the section */
+    margin: 0 auto; /* Center the section */
+}
+
+.central-container h3 {
+    margin-bottom: 30px;
+    margin-top: -10px;
+    color: #333;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.central-container p {
+    margin: 5px 50px;
+    font-size: 1.4em;
+    color: #7c7c7c;
+
+}
+
+.iban p{
+    margin-top: 30px;
+    font-size: 1.em;
+    font-style: italic;
+    color: #7c7c7c;
+}
