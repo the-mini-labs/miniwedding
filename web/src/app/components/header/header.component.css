@@ -5,6 +5,7 @@
     padding: 0.3rem 0;
   }
 
+
   .container {
     max-width: 900px;
     margin: 0 auto;
@@ -44,7 +45,8 @@
   }
 
   .nav-links a:hover {
-    color: #2d3748;
+    color: #000000;
+    text-decoration: underline;
   }
 
   .menu-toggle {
