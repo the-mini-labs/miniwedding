@@ -31,7 +31,7 @@ tasks:
   dist:
     desc: build dist folder to deploy
     cmds:
-      - docker compose run -it --rm web sh -c "npx ng build"
+      - docker compose run -it --rm web sh -c "ng build --output-path docs --base-href /miniwedding/"
       - rsync -rah web/dist/browser/ docs
 
   # ===> Setup <===
