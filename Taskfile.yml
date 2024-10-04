@@ -18,11 +18,6 @@ tasks:
     cmds:
       - docker compose run --rm web
 
-  start:
-    desc: start only the frontend
-    cmds:
-      - docker compose run --rm web
-
   build:
     desc: build only the frontend
     cmds:
@@ -32,6 +27,12 @@ tasks:
     desc: launch container cmd line
     cmds:
       - docker compose run -it --rm web sh
+
+  dist:
+    desc: build dist folder to deploy
+    cmds:
+      - docker compose run -it --rm web sh -c "npx ng build"
+      - rsync -rah web/dist docs
 
   # ===> Setup <===
   venv:
