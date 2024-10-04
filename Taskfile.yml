@@ -32,7 +32,7 @@ tasks:
     desc: build dist folder to deploy
     cmds:
       - docker compose run -it --rm web sh -c "npx ng build"
-      - rsync -rah web/dist docs
+      - rsync -rah web/dist/browser/ docs
 
   # ===> Setup <===
   venv:
