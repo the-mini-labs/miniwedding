@@ -3,10 +3,15 @@
 .contacts {
     justify-content: space-around;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     max-width: 900px; /* Set a maximum width for the section */
     margin: 0 auto; /* Center the section */
     text-align: center; /* Center the text */
+}
+
+.card {
+    display: flex-col;
 }
 
 .column {
@@ -22,6 +27,7 @@
     object-fit: cover;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Add shadow effect */
 }
+
 
 .column h3 {
     margin: 10px;
