@@ -33,6 +33,10 @@ tasks:
     cmds:
       - docker compose run -it --rm web sh -c "ng build --base-href /miniwedding/"
       - rsync -rah web/dist/browser/ docs
+  
+  gitpages:
+    cmds:
+      -  ng deploy --repo=https://github.com/the-mini-labs/miniwedding.git --name="Nicola Giacobbo" --email=ningia.coder@gmail.com
 
   # ===> Setup <===
   venv:
