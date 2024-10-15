@@ -36,7 +36,7 @@ tasks:
   
   gitpages:
     cmds:
-      -  ng deploy --repo=https://github.com/the-mini-labs/miniwedding.git --name="Nicola Giacobbo" --email=ningia.coder@gmail.com
+      -  ng deploy --repo=https://github.com/the-mini-labs/miniwedding.git --base-href=/miniwedding/ --name="Nicola Giacobbo" --email=ningia.coder@gmail.com
 
   # ===> Setup <===
   venv:
