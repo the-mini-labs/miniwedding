@@ -10,4 +10,7 @@ import { SeparatorComponent } from '../separator/separator.component';
 })
 export class ConfirmComponent {
 
+  goToForm(){
+    window.open('https://forms.gle/3K4UqvPwsqe7cCGJ6', '_blank');
+  }
 }
